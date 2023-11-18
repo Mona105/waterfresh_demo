@@ -1,0 +1,146 @@
+@media (max-width:1292px) {
+    .client img {
+        margin-bottom: 15px;
+    }
+
+
+
+}
+
+@media (max-width:926px) {
+    .ceo {
+        background-color: #c5eaf6;
+    }
+}
+
+@media(max-width:764px) {
+    .mission_vission {
+        background-color: #eef9f3;
+    }
+}
+
+.how-section1 {
+
+    padding: 3%;
+}
+
+.how-section1 h4 {
+    color: rgb(31, 120, 143);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.how-section1 .row {
+    margin-top: 2%;
+}
+
+.how-img {
+    text-align: center;
+}
+
+.how-img img {
+    width: 50%;
+}
+
+.navbar {
+    margin-top: 0 !important;
+    margin-top: -10px !important;
+}
+
+.nav-item {
+    margin-top: 15px !important;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    /* Text color */
+    padding: 8px;
+    /* Padding for text */
+
+}
+
+.custom-card {
+    margin-top: -0.25rem !important;
+}
+
+:root {
+    --bs-card-spacer-y: 0.25rem;
+    /* Adjust the value as needed */
+}
+
+.card-title {
+    padding-top: 0.25rem !important;
+    color: rgb(31, 120, 143);
+}
+
+.fa {
+    padding: 10px;
+    font-size: 50px;
+    height: 70px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    color: rgb(141, 62, 75);
+}
+
+.fa-whatsapp {
+    background: #068b32;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+h2 {
+    font-family: Arial, Verdana;
+    font-weight: 800;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+.mission_vission{
+    margin-top: -30px;
+}
+.image-container {
+    position: relative;
+  }
+.image-overlay h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 22px;
+  }
+  
