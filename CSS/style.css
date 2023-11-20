@@ -532,8 +532,4 @@ h2 {
   width: 30%;
 }
 
-@media(max-width:762px){
-  .process{
-    margin-top:-50px;
-  }
-}
+  
