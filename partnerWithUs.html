@@ -36,46 +36,61 @@
     <!--end page Loader -->
 
     <nav class="navbar navbar-expand-lg fixed-top sticky" style="background-color: #7ee7de;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img src="images/waterfresh_logo.png" alt="" height="50"></a>
+    <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="images/logo_waterfresh.png" alt="" height="70"></a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navList">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="partnerWithUs.html">Partner With US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactUs.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="workWithUs.html">Work With US</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <a href="tel:7420140066" class="btn btn-outline-success rounded-pill text-center" type="ntn btn-primary"
-            style="background-color: rgb(20, 184, 212); color: white; height: 40px;">
-            <!-- Bootstrap phone icon -->
-            <span style="font-family: Arial, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><i
-                class="bi bi-telephone"></i>+917420140066</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbar-center" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="navbar-navList">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partnerWithUs.html">Partner with us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactUs.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="workWithUs.html">Join us</a>
+          </li>
+        </ul>
+        
+        
+        <form class="d-flex ms-auto">
+          <div class="container">
+            <!-- Create social media icons using Font Awesome -->
+            <a href="tel: +91742881455" class="btn btn-link">
+              <i class="fa fa-phone"></i>
             </a>
-                </form>
-            </div>
-        </div>
-    </nav> <!--end container-->
+
+            
+            <a href="https://api.whatsapp.com/send/?phone=917428140066&text&type=phone_number&app_absent=0"
+              class="btn btn-link">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:waterfresh323@gmail.com"
+              class="btn btn-link">
+              <i class="fa fa-envelope"></i>
+            </a>
+
+            <!-- Add more social media icons and links as needed -->
+          </div>
+        </form>
+      
+      </div>
+    </div>
+  </nav> <!--end container-->
+
 
     <!-- END NAVBAR -->
 
@@ -95,7 +110,8 @@
         </div>
     </section>
     <!-- END HERO -->
-
+<br>
+<br>
 
     <!--Scheduled home pick up & drop-->
     <section class="section">
@@ -104,24 +120,26 @@
                 <div class="card text-center" style="width: 800px; height: 200px;">
 
                     <div class="card-body">
-                        <h5 class="card-title">Schedule Home Pick Up & Drop</h5>
-                        <p class="card-text">
-                        <form>
-                            <div class="row">
-                                <div class="col mb-3">
-                                    <input type="text" class="form-control" placeholder="Name">
-                                </div>
-                                <div class="col mb-3">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                </div>
-                                <div class="col mb-3">
-                                    <input type="number" class="form-control" placeholder="Contact no.">
-                                </div>
-                            </div>
-                            </p>
+                  
+            <h5 class="card-title">Fill in to enquire</h5>
+            <p class="card-text">
+            <form action="user-details-save" method="POST">
+               
+              <div class="row">
+                <div class="col mb-3">
+                  <input type="text" name="name" class="form-control" placeholder="Name">
+                </div>
+                <div class="col mb-3">
+                  <input type="email" name="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="col mb-3">
+                  <input type="number" name="contact" class="form-control" placeholder="Contact no.">
+                </div>
+              </div>
+              </p>
 
-                            <a href="#" class="btn btn-primary">Submit</a>
-                        </form>
+              <input type="submit" class="btn btn-primary">
+            </form>
                     </div>
                 </div>
             </div>
@@ -136,22 +154,21 @@
                 <br>
                 <br>
                 <div class="text-center">
-                    <h1 style="color:rgb(31, 120, 143);" class="fw-bold" style="font-size: 30px;">Partners With Us</h1>
+                    <h1 style="color:rgb(31, 120, 143);" class="fw-bold" style="font-size: 30px;"><u>Partners With Us</u></h1>
                     <br>
-                    <p> Some general reasons why you might consider partnering with a laundry service like WaterFresh:
-                        Time-saving, Efficient, Convenient, Consistent, Reliable and Eco-Friendly Practices.
-                    </p>
-                </div>
+                                   </div>
                 <br>
                 <br>
                 <div class="how-section1">
                     <div class="row">
                         <div class="col-sm col-12 order-last order-sm-0 text-center">
                             <h4>Sponsor a Collection Point</h4>
-                            <p class="text-muted"> You can connect with us for the dry cleaning service provider to
+                            <p class="text-muted"> You can connect with us to
                                 express
                                 your interest in sponsoring a collection point for our services. You can write to us or
                                 connect with us over the phone.
+                                <br>
+                                <a href="mailto:waterfresh323@gmail.com">Mail Us</a>
                             </p>
                         </div>
 
@@ -176,7 +193,8 @@
                                 service, and business management. Also, ongoing support is available to address
                                 challenges
                                 and promote success.
-
+                                <br>
+                                <a href="mailto:waterfresh323@gmail.com">Mail Us</a>
                             </p>
                         </div>
                     </div>
@@ -194,6 +212,8 @@
                                 handling the clothing and textiles with care, and ensuring that the entire process is
                                 convenient and reliable. Selecting a reliable and trustworthy delivery partner is key to
                                 building customer trust and loyalty.
+                                <br>
+                                <a href="mailto:waterfresh323@gmail.com">Mail Us</a>
                             </p>
                         </div>
                         <div class="col-sm col-12 how-img">
@@ -214,46 +234,48 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="images/waterfresh_logo.png" alt="" height="50">
-                   
-                </div>
-                <div class="col">
                     <h5>About Us</h5>
                     <ul>
-                        <li style="font-size: 14px;">Our Journey</li>
-                        <li style="font-size: 14px;">Our Mission</li>
-                        <li style="font-size: 14px;">Our Values</li>
+                        <li style="font-size: 14px;"><a href="about">Our Journey</a></li>
+                        <li style="font-size: 14px;"><a href="about">Our Mission</a></li>
+                        <li style="font-size: 14px;"><a href="about">Our Values</a></li>
                     </ul>
                 </div>
                 <div class="col">
                     <h5>Services</h5>
                     <ul>
-                        <li style="font-size: 14px;">Special Events
-                            <ul>
-                                <li style="font-size: 12px;">Destination Wedding</li>
-                                <li style="font-size: 12px;">Events</li>
-                            </ul>
+                        <li style="font-size: 14px;"><a href="services">Dry cleaning</a>
+                          
                         </li>
-                        <li style="font-size: 14px;">Pick & Drop
-                            <ul>
-                                <li style="font-size: 12px;">Home Cleansing</li>
-                                <li style="font-size: 12px;">Curtains & Furnishings</li>
-                                <li style="font-size: 12px;">Rugs & Carpets</li>
-                                <li style="font-size: 12px;">Bags & Shoes</li>
-                                <li style="font-size: 12px;">Delicates & Formals</li>
-                            </ul>
+                        <li style="font-size: 14px;"><a href="services">Deep Cleaning</a>
+                            
                         </li>
-                        <li style="font-size: 14px;">Subscriptions Model</li>
-                        <li style="font-size: 14px;">Corporate</li>
-                        <li style="font-size: 14px;">Retail</li>
+                         <li style="font-size: 14px;"><a href="services">Special Events</a>
+                            
+                        </li>
+                        <li style="font-size: 14px;"><a href="services">Who Do We Cater</a></li>
+                         <ul>
+                        <li style="font-size: 12px;">Corporate</li>
+                        <li style="font-size: 12px;">Household</li>
+                        
+                           </ul>
+                        <li style="font-size: 14px;"><a href="services">Mode Of Services</a>
+                      <ul>
+                        <li style="font-size: 12px;">Pick up & drop</li>
+                        
+                        <li style="font-size: 12px;">Onsite</li>
+                        
+                          </ul>
+                        </li>
+                        
                     </ul>
                 </div>
                 <div class="col">
                     <h5>Partner With Us</h5>
                     <ul>
-                        <li style="font-size: 14px;">Sponsor Collection Point</li>
-                        <li style="font-size: 14px;">Buy a Franchisee</li>
-                        <li style="font-size: 14px;">Delivery Partner</li>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Sponsor Collection Point</a></li>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Buy a Franchisee</a></li>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Delivery Partner</a></li>
                     </ul>
                 </div>
                 <div class="col">
@@ -268,13 +290,14 @@
                 </div>
                 <div class="col">
                     <h5>Work With Us</h5>
-                    <button type="button" class="btn btn-outline-info"><a href="workWithUs.html"
+                    <button type="button" class="btn btn-outline-info"><a href="workWithUs"
                             class="text-decoration-none" style="color:#35b5b9">Apply now</a></button>
                 </div>
             </div>
         </div>
     </footer>
-    <footer style="background-color: #7ee7de;">
+   
+ <footer style="background-color: #7ee7de;">
         <br>
         <div class="container">
             <div class="row">

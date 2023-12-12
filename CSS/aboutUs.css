@@ -44,7 +44,8 @@
 
 .navbar {
     margin-top: 0 !important;
-    margin-top: -10px !important;
+    margin-top: -20px !important;
+   
 }
 
 .nav-item {
@@ -113,13 +114,27 @@
 .fa-whatsapp {
     background: #068b32;
     color: white;
-}
+   
+  }
 
 .fa-youtube {
     background: #bb0000;
     color: white;
 }
 
+.fa-phone{
+    color: blue;
+    margin-top: 0px;
+    padding:-20px;
+    margin-bottom: -40px;
+  }
+  
+  .fa-envelope{
+    color: hsl(0, 100%, 37%);
+    margin-top: 0px;
+    padding-top: -20px;
+    margin-bottom: -40px;
+  }
 h2 {
     font-family: Arial, Verdana;
     font-weight: 800;

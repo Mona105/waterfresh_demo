@@ -34,41 +34,56 @@
   <!--Start Navbar-->
   <nav class="navbar navbar-expand-lg fixed-top sticky" style="background-color: #7ee7de;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="images/waterfresh_logo.png" alt="" height="50"></a>
+    <a class="navbar-brand" href="index.html"><img src="images/logo_waterfresh.png" alt="" height="70"></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navList">
+      <div class="collapse navbar-collapse navbar-center" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="navbar-navList">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="about.html">About us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="partnerWithUs.html">Partner With US</a>
+            <a class="nav-link" href="partnerWithUs.html">Partner with us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contactUs.html">Contact Us</a>
+            <a class="nav-link" href="workWithUs.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="workWithUs.html">Work With US</a>
+            <a class="nav-link" href="workWithUs">Join us</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <a href="tel:7420140066" class="btn btn-outline-success rounded-pill text-center" type="ntn btn-primary"
-          style="background-color: rgb(20, 184, 212); color: white; height: 40px;">
-          <!-- Bootstrap phone icon -->
-          <span style="font-family: Arial, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><i
-              class="bi bi-telephone"></i>+917420140066</span>
-          </a>
+        
+        
+        <form class="d-flex ms-auto">
+          <div class="container">
+            <!-- Create social media icons using Font Awesome -->
+            <a href="tel: +91742881455" class="btn btn-link">
+              <i class="fa fa-phone"></i>
+            </a>
+
+            
+            <a href="https://api.whatsapp.com/send/?phone=917428140066&text&type=phone_number&app_absent=0"
+              class="btn btn-link">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:waterfresh323@gmail.com"
+              class="btn btn-link">
+              <i class="fa fa-envelope"></i>
+            </a>
+
+            <!-- Add more social media icons and links as needed -->
+          </div>
         </form>
+      
       </div>
     </div>
   </nav> <!--end container-->
@@ -94,26 +109,27 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="card text-center" style="width: 800px; height: 220px;">
-
+       
           <div class="card-body">
             <h5 class="card-title">Work With Us</h5>
             <p class="card-text">
-            <form>
+            <form action="user-hire-save" method="POST">
+           
               <div class="row">
                 <div class="col mb-3">
-                  <input type="text" class="form-control" placeholder="Name">
+                  <input type="text" name="name" class="form-control" placeholder="Name">
                 </div>
                 <div class="col mb-3">
-                  <input type="email" class="form-control" placeholder="Email">
+                  <input type="email" name="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="col mb-3">
-                  <input type="number" class="form-control" placeholder="Contact no.">
+                  <input type="number" name="contact" class="form-control" placeholder="Contact no.">
                 </div>
 
               </div>
               <div class="row">
                 <div class="col mb-6">
-                  <select id="disabledSelect" class="form-select" placeholder="Vaccancies Available">
+                  <select id="disabledSelect" name="vaccancies" class="form-select" placeholder="Vaccancies Available">
                     <option>Sales and Marketing</option>
                     <option>Operations</option>
                     <option>HR (Human Resources)</option>
@@ -126,13 +142,13 @@
                   </select>
                 </div>
                 <div class="col mb-6">
-                  <input class="form-control form-control-sm" id="formFileSm" type="file" />
+                  <input class="form-control" name="resume" id="formFileSm" type="file" />
 
                 </div>
               </div>
               </p>
 
-              <a href="#" class="btn btn-primary">Apply Now</a>
+              <input type="submit" class="btn btn-primary" placeholder="Apply Now">
             </form>
           </div>
         </div>
@@ -149,19 +165,16 @@
           <h2 class="fw-bold" style="color:#14ac9f">How To Apply</h2>
         </div>
         <br>
-        <p style="font-size: 16px;">To express your interest in a career with WaterFresh, kindly visit our &quot;Work
-          with Us&quot;
-          tab on our website, where you can upload your credentials. Our recruitment team conducts regular
-          reviews of applications and will be in touch with you as promptly as possible.
-          <br><br>
-          Join us in our quest to revolutionize the dry cleaning industry through eco-friendly practices. Your
-          skills and enthusiasm can be a catalyst for positive change, not only for your career but also for our
-          planet.
-          <br><br>
+        <p style="font-size: 16px;">To express your interest in a career with WaterFresh, fill in the form above. Our recruitment team conducts regular reviews of applications and will be in touch with you as promptly as possible.
+
+           Join us in our quest to revolutionize the dry cleaning industry through eco-friendly practices. Your skills and enthusiasm can be a catalyst for positive change, not only for your career but also for our planet.
+
           Should you be ready to embark on a fulfilling career with WaterFresh, we encourage you to apply
           today. We eagerly anticipate the possibility of welcoming you to our eco-friendly family!
-
         </p>
+        <br>
+        <br>
+        
       </div>
     </div>
   </section>
@@ -170,70 +183,73 @@
 
   <br>
   <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <img src="images/waterfresh_logo.png" alt="" height="50">
-          
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li style="font-size: 14px;"><a href="about">Our Journey</a></li>
+                        <li style="font-size: 14px;"><a href="about">Our Mission</a></li>
+                        <li style="font-size: 14px;"><a href="about">Our Values</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li style="font-size: 14px;"><a href="services">Dry cleaning</a>
+                          
+                        </li>
+                        <li style="font-size: 14px;"><a href="services">Deep Cleaning</a>
+                            
+                        </li>
+                         <li style="font-size: 14px;"><a href="services">Special Events</a>
+                            
+                        </li>
+                        <li style="font-size: 14px;"><a href="services">Who Do We Cater</a></li>
+                         <ul>
+                        <li style="font-size: 12px;">Corporate</li>
+                        <li style="font-size: 12px;">Household</li>
+                        
+                           </ul>
+                        <li style="font-size: 14px;"><a href="services">Mode Of Services</a>
+                      <ul>
+                        <li style="font-size: 12px;">Pick up & drop</li>
+                        
+                        <li style="font-size: 12px;">Onsite</li>
+                        
+                          </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Partner With Us</h5>
+                    <ul>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Sponsor Collection Point</a></li>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Buy a Franchisee</a></li>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Delivery Partner</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Locate Us</h5>
+                    <ul>
+                        <li style="font-size: 14px;">Gurugram</li>
+                        <li style="font-size: 14px;">Manesar</li>
+                        <li style="font-size: 14px;">Dwarka Expressway</li>
+                        <li style="font-size: 14px;">South Delhi</li>
+                        <li style="font-size: 14px;">Faridabad</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Work With Us</h5>
+                    <button type="button" class="btn btn-outline-info"><a href="workWithUs"
+                            class="text-decoration-none" style="color:#35b5b9">Apply now</a></button>
+                </div>
+            </div>
         </div>
-        <div class="col">
-          <h5>About Us</h5>
-          <ul>
-            <li style="font-size: 14px;">Our Journey</li>
-            <li style="font-size: 14px;">Our Mission</li>
-            <li style="font-size: 14px;">Our Values</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Services</h5>
-          <ul>
-            <li style="font-size: 14px;">Special Events
-              <ul>
-                <li style="font-size: 12px;">Destination Wedding</li>
-                <li style="font-size: 12px;">Events</li>
-              </ul>
-            </li>
-            <li style="font-size: 14px;">Pick & Drop
-              <ul>
-                <li style="font-size: 12px;">Home Cleansing</li>
-                <li style="font-size: 12px;">Curtains & Furnishings</li>
-                <li style="font-size: 12px;">Rugs & Carpets</li>
-                <li style="font-size: 12px;">Bags & Shoes</li>
-                <li style="font-size: 12px;">Delicates & Formals</li>
-              </ul>
-            </li>
-            <li style="font-size: 14px;">Subscriptions Model</li>
-            <li style="font-size: 14px;">Corporate</li>
-            <li style="font-size: 14px;">Retail</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Partner With Us</h5>
-          <ul>
-            <li style="font-size: 14px;">Sponsor Collection Point</li>
-            <li style="font-size: 14px;">Buy a Franchisee</li>
-            <li style="font-size: 14px;">Delivery Partner</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Locate Us</h5>
-          <ul>
-            <li style="font-size: 14px;">Gurugram</li>
-            <li style="font-size: 14px;">Manesar</li>
-            <li style="font-size: 14px;">Dwarka Expressway</li>
-            <li style="font-size: 14px;">South Delhi</li>
-            <li style="font-size: 14px;">Faridabad</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Work With Us</h5>
-          <button type="button" class="btn btn-outline-info"><a href="workWithUs.html" class="text-decoration-none"
-              style="color:#35b5b9">Apply now</a></button>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <footer style="background-color: #7ee7de;">
+    </footer>
+   
+ <footer style="background-color: #7ee7de;">
     <br>
     <div class="container">
       <div class="row">

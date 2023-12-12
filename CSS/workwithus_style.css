@@ -1,6 +1,7 @@
 .navbar {
   margin-top: 0 !important;
-  margin-top: -10px !important;
+  margin-top: -20px !important;
+ 
 }
 
 .nav-item {
@@ -69,6 +70,20 @@
   background: #068b32;
   color: white;
 }
+.fa-phone{
+  color: blue;
+  margin-top: -10px;
+  padding:-20px;
+  margin-bottom: -10px;
+}
+
+.fa-envelope{
+  color: hsl(0, 100%, 37%);
+  margin-top: -10px;
+  padding-top: -20px;
+  margin-bottom: -10px;
+}
+
 
 /* Add a black background color to the top navigation */
 .topnav {

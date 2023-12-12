@@ -19,46 +19,72 @@
 </head>
 
 <body>
+<div id="preloader">
+    <div id="status">
+      <div class="load">
+        <hr />
+       <hr/>
+          <hr/>
+          
+      </div>
+    </div>
+  </div>
 
   <!--end page Loader -->
 
   <nav class="navbar navbar-expand-lg fixed-top sticky" style="background-color: #7ee7de;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="images/waterfresh_logo.png" alt="" height="50"></a>
+    <a class="navbar-brand" href="index.html"><img src="images/logo_waterfresh.png" alt="" height="70"></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navList">
+      <div class="collapse navbar-collapse navbar-center" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="navbar-navList">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="about.html">About us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="partnerWithUs.html">Partner With US</a>
+            <a class="nav-link" href="partnerWithUs.html">Partner with us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contactUs.html">Contact Us</a>
+            <a class="nav-link" href="contactUs.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="workWithUs.html">Work With US</a>
+            <a class="nav-link" href="workWithUs.html">Join us</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <a href="tel:7420140066" class="btn btn-outline-success rounded-pill text-center" type="ntn btn-primary"
-            style="background-color: rgb(20, 184, 212); color: white; height: 40px;">
-            <!-- Bootstrap phone icon -->
-            <span style="font-family: Arial, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><i
-                class="bi bi-telephone"></i>+917420140066</span>
+        
+        
+        <form class="d-flex ms-auto">
+          <div class="container">
+            <!-- Create social media icons using Font Awesome -->
+            <a href="tel: +91742881455" class="btn btn-link">
+              <i class="fa fa-phone"></i>
             </a>
+
+            
+            <a href="https://api.whatsapp.com/send/?phone=917428140066&text&type=phone_number&app_absent=0"
+              class="btn btn-link">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:waterfresh323@gmail.com"
+              class="btn btn-link">
+              <i class="fa fa-envelope"></i>
+            </a>
+
+            <!-- Add more social media icons and links as needed -->
+          </div>
         </form>
+      
+      
       </div>
     </div>
   </nav> <!--end container-->
@@ -99,23 +125,25 @@
         <div class="card text-center" style="width: 800px; height: 200px;">
 
           <div class="card-body">
+         
             <h5 class="card-title">Schedule Home Pick Up & Drop</h5>
             <p class="card-text">
-            <form>
+            <form action="user-details-save" method="POST">
+                
               <div class="row">
                 <div class="col mb-3">
-                  <input type="text" class="form-control" placeholder="Name">
+                  <input type="text" name="name" class="form-control" placeholder="Name">
                 </div>
                 <div class="col mb-3">
-                  <input type="email" class="form-control" placeholder="Email">
+                  <input type="email" name="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="col mb-3">
-                  <input type="number" class="form-control" placeholder="Contact no.">
+                  <input type="number" name="contact" class="form-control" placeholder="Contact no.">
                 </div>
               </div>
               </p>
 
-              <a href="#" class="btn btn-primary">Submit</a>
+              <input type="submit" class="btn btn-primary">
             </form>
           </div>
         </div>
@@ -129,11 +157,9 @@
       <br>
       <br>
       <div class="text-center">
-        <h1 style="color:rgb(31, 120, 143);" class="fw-bold" style="font-size: 40px;">Our Services</h1>
+        <h1 style="color:rgb(31, 120, 143);" class="fw-bold" style="font-size: 40px;"><u>Our Services</u></h1>
         <br>
-        <p>WaterFresh is an Eco-Friendly Organic Dry Cleaning Company that stands out in the industry for several
-          compelling reasons that set us apart from traditional dry cleaning businesses and even other eco-friendly
-          alternatives.</p>
+        
       </div>
       <br>
       <br>
@@ -141,34 +167,26 @@
       <div class="how-section1">
         <div class="row">
           <div class="col-sm col-12 order-last order-sm-0 text-center">
-            <h4>Events</h4>
-            <p class="text-muted">WaterFresh provides laundry service for events like weddings and corporate events. We
-              create event-specific packages that include a variety of garment cleaning and maintenance services.
-              Planning
-              and executing these large-scale events require accurate attention to detail, and ensuring
-              that attendees look their best is most important. Our specialized event laundry service is designed to
-              relieve the burden of outfit maintenance for event organizers and participants alike. From elegant wedding
-              gowns to finely tailored business suits, we provide a seamless online platform.
-            </p>
+            <h4>Dry Cleaning</h4>
+            <p class="text-muted">  
+            WaterFresh is a dry cleaning service that uses specialized solvents in an eco-friendly process. This method is particularly suitable for delicate fabrics that may not withstand traditional washing. We offer a range of services including the cleaning of rugs and carpets, shoes and bags, delicate items, cushions and couches, and formal wear. We also provide a nano coating service for superior protection and longevity of your items. With WaterFresh, you can experience the new age of dry cleaning.
+</p>
           </div>
           <div class="col-sm col-12 how-img">
-            <img src="images/events.png" class="img-fluid" alt="" />
+            <img src="images/Dry Cleaning.png" class="img-fluid" alt="" />
           </div>
         </div>
         <br>
         <div class="row my-3">
           <div class="col-sm col-12 how-img">
-            <img src="images/pick&Drop.png" class="img-fluid" alt="" />
+            <img src="images/Deep Cleaning.png" class="img-fluid" alt="" />
           </div>
           <div class="col-sm col-12 text-center">
-            <h4>Pick & Drop</h4>
+            <h4>Deep Cleaning</h4>
             <p class="text-muted">
-              WaterFresh offers a convenient and efficient pickup and drop service as online has become a crucial part
-              of
-              modern business operations. With the rise of online platforms and mobile apps, customers expect the
-              convenience of scheduling pickups and deliveries at their fingertips. We empower our customers to book,
-              track, and manage their orders with ease. This not only saves time but also builds trust and loyalty,
-              ultimately contributing to the success of our business in today's digitally connected world.
+            WaterFresh offers comprehensive deep cleaning services that rejuvenate your space, going beyond the surface to target everything from carpets and upholstery to kitchen appliances and hard-to-reach spaces. Our services include Upholstery Renewal, Kitchen Appliances Cleaning, Bathroom Sanitization, Window and Glass Cleaning, Air Duct Cleaning, and Floor Care. 
+            We ensure every corner of your home or office is revitalized, resulting in a cleaner, healthier space. Experience the transformation with our meticulous deep cleaning process.
+
 
 
             </p>
@@ -177,57 +195,51 @@
         <br>
         <div class="row ">
           <div class="col-sm col-12 order-last order-sm-0 text-center">
-            <h4>Subscription Model</h4>
-            <p class="text-muted">To be recognised as an international brand that is widely appreciated for its
-              commitment
-              to sustainability and eco-friendly dry cleaning practices along with high service standards. </p>
+            <h4>Special Events</h4>
+            <p class="text-muted">WaterFresh offers dedicated cleaning services for special events, ensuring that both you and your venue shine for the occasion. We cater to a variety of events including destination weddings, fashion shows, film shooting events, corporate gatherings, and other special occasions. Our services include ensuring all attire is perfectly pressed and ready. We also provide onsite steam pressing stations for runway-ready outfits at fashion shows, and more. With WaterFresh, you can focus on making beautiful memories while we handle the cleanliness.
+</p>
           </div>
           <div class="col-sm col-12 how-img">
-            <img src="images/subscription_model.png" class="img-fluid" alt="" />
+            <img src="images/Special Events.png" class="img-fluid" alt="" />
           </div>
         </div>
+        <br>
+        <br>
+        <div class="text-center">
+        <h4 class="fw-bold" style="font-size: 40px;"><u>Mode Of Services</u></h4>
+</div>
+<br>
+<br>
         <div class="row my-3">
           <div class="col-sm col-12 how-img">
-            <img src="images/corprate_services.png" class="img-fluid" alt="" />
+            <img src="images/pick&Drop.png" class="img-fluid" alt="" />
           </div>
           <div class="col-sm col-12 text-center">
-            <h4>Corporate</h4>
+            <h4>Pick Up & Drop</h4>
             <p class="text-muted">
-              WaterFresh laundry services for corporate clients offer a convenient and time-saving solution to one of
-              the
-              daily challenges many businesses face. These services are designed to provide to the specific needs of
-              companies, ensuring that employees always have access to clean and well-maintained uniforms or work
-              attire.
-              By partnering with WaterFresh laundry service, businesses can streamline their laundry operations, reduce
-              the workload on in-house staff, and maintain a professional appearance. WaterFresh laundry services often
-              provide eco-friendly options, promoting sustainability and social responsibility within the corporate
-              world.
-
-
+              
+            We understand your busy schedule. That’s why we offer convenient pick-up and drop-off services for all your cleaning needs. Whether it’s your clothes or cleaning of household items, we ensure our services reach your doorstep. With WaterFresh, experience hassle-free cleaning that comes to you.
             </p>
           </div>
         </div>
         <br>
         <div class="row">
           <div class="col-sm col-12 order-last order-sm-0 text-center">
-            <h4>Retail Services</h4>
-            <p class="text-muted">WaterFresh laundry services for households have gained immense popularity in recent
-              years, offering a convenient and time-saving solution for busy individuals and families. Our service
-              provides a hassle-free way to manage the never-ending task of washing, drying, and folding clothes. With
-              just a few clicks on a mobile app or website, customers can schedule pick-up and delivery, select their
-              preferred settings, and customize special instructions. The laundry will be collected from your doorstep,
-              professionally cleaned, and returned to you, all within a specified timeframe. This not only frees up your
-              valuable time but also ensures that your clothes are cleaned and maintained to a high standard. We offer
-              eco-friendly options and often have a user-friendly platform that makes the entire process seamless and
-              efficient.
+            <h4>Onsite Projects</h4>
+            <p class="text-muted">
+            WaterFresh specializes in cleaning up after construction or renovation projects, leaving your space pristine and ready for occupancy. We also  prepare your space for any special event, ensuring it leaves a lasting impression on your guests. For corporates, we ensure a hygienic and comfortable working atmosphere, contributing to productivity and employee well-being.
 
             </p>
           </div>
           <div class="col-sm col-12 how-img">
-            <img src="images/subscription_model.png" class="img-fluid" alt="" />
+            <img src="images/Onsite Projects.png" class="img-fluid" alt="" />
           </div>
         </div>
-
+        <br>
+        <br>
+        <div class="text-center">
+      <h3 style="font-size: 20px;"><b>Note :- Attractive discounts available on a weekly/monthly subscription</b></h3>
+</div>
       </div>
 
     </div>
@@ -249,68 +261,73 @@
   <!--end table garments-->
   <br>
   <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <img src="images/waterfresh_logo.png" alt="" height="50">
-          
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li style="font-size: 14px;"><a href="about">Our Journey</a></li>
+                        <li style="font-size: 14px;"><a href="about">Our Mission</a></li>
+                        <li style="font-size: 14px;"><a href="about">Our Values</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li style="font-size: 14px;"><a href="services">Dry cleaning</a>
+                          
+                        </li>
+                        <li style="font-size: 14px;"><a href="services">Deep Cleaning</a>
+                            
+                        </li>
+                         <li style="font-size: 14px;"><a href="services">Special Events</a>
+                            
+                        </li>
+                        <li style="font-size: 14px;"><a href="services">Who Do We Cater</a></li>
+                         <ul>
+                        <li style="font-size: 12px;">Corporate</li>
+                        <li style="font-size: 12px;">Household</li>
+                        
+                           </ul>
+                        <li style="font-size: 14px;"><a href="services">Mode Of Services</a>
+                      <ul>
+                        <li style="font-size: 12px;">Pick up & drop</li>
+                        
+                        <li style="font-size: 12px;">Onsite</li>
+                        
+                          </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Partner With Us</h5>
+                    <ul>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Sponsor Collection Point</a></li>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Buy a Franchisee</a></li>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Delivery Partner</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Locate Us</h5>
+                    <ul>
+                        <li style="font-size: 14px;">Gurugram</li>
+                        <li style="font-size: 14px;">Manesar</li>
+                        <li style="font-size: 14px;">Dwarka Expressway</li>
+                        <li style="font-size: 14px;">South Delhi</li>
+                        <li style="font-size: 14px;">Faridabad</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Work With Us</h5>
+                    <button type="button" class="btn btn-outline-info"><a href="workWithUs"
+                            class="text-decoration-none" style="color:#35b5b9">Apply now</a></button>
+                </div>
+            </div>
         </div>
-        <div class="col">
-          <h5>About Us</h5>
-          <ul>
-            <li style="font-size: 14px;">Our Journey</li>
-            <li style="font-size: 14px;">Our Mission</li>
-            <li style="font-size: 14px;">Our Values</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Services</h5>
-          <ul>
-            <li style="font-size: 14px;">Special Events
-              <ul>
-                <li style="font-size: 12px;">Destination Wedding</li>
-                <li style="font-size: 12px;">Events</li>
-              </ul>
-            </li>
-            <li style="font-size: 14px;">Pick & Drop
-              <ul>
-                <li style="font-size: 12px;">Home Cleansing</li>
-                <li style="font-size: 12px;">Curtains & Furnishings</li>
-                <li style="font-size: 12px;">Rugs & Carpets</li>
-                <li style="font-size: 12px;">Bags & Shoes</li>
-                <li style="font-size: 12px;">Delicates & Formals</li>
-              </ul>
-            </li>
-            <li style="font-size: 14px;">Subscriptions Model</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Partner With Us</h5>
-          <ul>
-            <li style="font-size: 14px;">Sponsor Collection Point</li>
-            <li style="font-size: 14px;">Franchise</li>
-            <li style="font-size: 14px;">Delivery a Part</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Locate Us</h5>
-          <ul>
-            <li style="font-size: 14px;">Gurugram</li>
-            <li style="font-size: 14px;">Manesar</li>
-            <li style="font-size: 14px;">Dwarka Expressway</li>
-            <li style="font-size: 14px;">South Delhi</li>
-            <li style="font-size: 14px;">Faridabad</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Work With Us</h5>
-          <button type="button" class="btn btn-outline-info"><a href="workWithUs.html" class="text-decoration-none"
-              style="color:#35b5b9">Apply now</a></button>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <footer style="background-color: #7ee7de;">
+    </footer>
+   
+ <footer style="background-color: #7ee7de;">
     <br>
     <div class="container">
       <div class="row">

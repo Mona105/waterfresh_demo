@@ -1,16 +1,59 @@
+.how-section1 {
+  margin-top: -15%;
+  padding: 10%;
+}
+
+.how-section1 h4 {
+  color: rgb(31, 120, 143);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.how-section1 .row {
+  margin-top: 3%;
+}
+
+.how-img {
+  text-align: center;
+}
+
+.how-img img {
+  width: 50%;
+}
+.img_des{
+  visibility: hidden;
+  opacity: 0;
+}
+.image-container:hover .img_hide{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.image-container:hover .img_des{
+  visibility: visible;
+  opacity: 1;
+}
+
+.image-container img{
+  opacity:50%;
+}
 .navbar {
   margin-top: 0 !important;
-  margin-top: -10px !important;
+  margin-top: -20px !important;
+ 
 }
+
 
 .nav-item {
   margin-top: 15px !important;
+  
 }
 
 .nav-item a {
   text-decoration: none;
   color: black;
 }
+
 
 .overlay-text {
   position: absolute;
@@ -69,11 +112,25 @@
 .fa-whatsapp {
   background: #068b32;
   color: white;
+ 
 }
 
 .fa-youtube {
   background: #bb0000;
   color: white;
+}
+.fa-phone{
+  color: blue;
+  margin-top: 0px;
+  padding:-20px;
+  margin-bottom: -40px;
+}
+
+.fa-envelope{
+  color: hsl(0, 100%, 37%);
+  margin-top: 0px;
+  padding-top: -20px;
+  margin-bottom: -30px;
 }
 
 h2 {
@@ -133,6 +190,17 @@ h2 {
   border-radius: 5px;
   font-size: 22px;
 }
+.image-overlay p {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
 
 .blur {
   opacity: 0.5;
@@ -300,34 +368,6 @@ h2 {
 
 
 
-/* About us page*/
-
-.how-section1 {
-
-  padding: 3%;
-}
-
-.how-section1 h4 {
-  color: rgb(31, 120, 143);
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.how-section1 .row {
-  margin-top: 2%;
-}
-
-.how-img {
-  text-align: center;
-}
-
-.how-img img {
-  width: 50%;
-}
-
-
-
-
 
 .img-area {
   width: 200px;
@@ -456,9 +496,7 @@ h2 {
 }
 
 @media (max-width:877px) {
-  .ourServices {
-    margin-bottom: 300px;
-  }
+  
 
   .partnerWithUs {
     background-image: url('images\ourServicesBackground2.png');
@@ -471,9 +509,7 @@ h2 {
 
 @media (max-width: 508px) {
 
-  .ourServices {
-    background-color: #c5eaf6;
-  }
+  
 
 
   .partnerWithUs {
@@ -491,11 +527,7 @@ h2 {
   }
 }
 
-@media(max-width: 899px) {
-  .ourServices {
-    background-color: #c5eaf6;
-  }
-}
+
 
 @media(max-width:879px) {
   .process {
@@ -509,27 +541,47 @@ h2 {
   }
 }
 
-.how-section1 {
 
-  padding: 3%;
+@media(max-width:762px){
+  .process{
+    margin-top:-50px;
+  }
 }
 
-.how-section1 h4 {
-  color: rgb(31, 120, 143);
-  font-weight: bold;
-  font-size: 30px;
+@media (max-width: 420px){
+  .corporate_below{
+    margin-bottom: 120px;
+  }
+
+}
+@media (max-width: 344px){
+  .corporate_below{
+    margin-bottom: 180px;
+  }
+}
+@media (max-width: 320px){
+  .corporate_below{
+    margin-bottom: 220px;
+  }
+}
+@media (max-width: 282px){
+  .corporate_below{
+    margin-bottom: 300px;
+  }
+}
+@media (max-width: 258px){
+  .corporate_below{
+    margin-bottom: 400px;
+  }
+}
+@media (max-width: 234px){
+  .corporate_below{
+    margin-bottom: 500px;
+  }
 }
 
-.how-section1 .row {
-  margin-top: 2%;
+@media (max-width: 446px){
+  .image-overlay p{
+    font-size: 10px;
+  }
 }
-
-.how-img {
-  text-align: center;
-}
-
-.how-img img {
-  width: 30%;
-}
-
-  

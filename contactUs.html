@@ -48,49 +48,66 @@
 
   <nav class="navbar navbar-expand-lg fixed-top sticky" style="background-color: #7ee7de;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="images/waterfresh_logo.png" alt="" height="50"></a>
+    <a class="navbar-brand" href="index.html"><img src="images/logo_waterfresh.png" alt="" height="70"></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navList">
+      <div class="collapse navbar-collapse navbar-center" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="navbar-navList">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="about.html">About us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="partnerWithUs.html">Partner With US</a>
+            <a class="nav-link" href="partnerWithUs.html">Partner with us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contactUs.html">Contact Us</a>
+            <a class="nav-link" href="contactUs.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="workWithUs.html">Work With US</a>
+            <a class="nav-link" href="workWithUs.html">Join us</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <a href="tel:7420140066" class="btn btn-outline-success rounded-pill text-center" type="ntn btn-primary"
-            style="background-color: rgb(20, 184, 212); color: white; height: 40px;">
-            <!-- Bootstrap phone icon -->
-            <span style="font-family: Arial, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><i
-                class="bi bi-telephone"></i>+917420140066</span>
+        
+        
+        <form class="d-flex ms-auto">
+          <div class="container">
+            <!-- Create social media icons using Font Awesome -->
+            <a href="tel: +91742881455" class="btn btn-link">
+              <i class="fa fa-phone"></i>
             </a>
+
+            
+            <a href="https://api.whatsapp.com/send/?phone=917428140066&text&type=phone_number&app_absent=0"
+              class="btn btn-link">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:waterfresh323@gmail.com"
+              class="btn btn-link">
+              <i class="fa fa-envelope"></i>
+            </a>
+
+            <!-- Add more social media icons and links as needed -->
+          </div>
         </form>
+        </form>
+      
       </div>
     </div>
-  </nav> <!--end container-->
+  </nav>
+
   <!-- END NAVBAR -->
 
   <!-- START HERO -->
   <section class="bg-blog">
-    <img class="img-fluid" src="images/locateus_banner.png" alt="Image" style="height: 450px; width:1400px;  ">
+    <img class="img-fluid" src="images/contact2.png" alt="Image"   >
 
     </div>
     </div>
@@ -103,37 +120,38 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="card text-center" style="width: 800px; height: 220px;">
-
+       
           <div class="card-body">
             <h5 class="card-title">How We Can Help You ?</h5>
             <p class="card-text">
-            <form>
+            <form action="user-help-save" method="POST">
+            
               <div class="row">
                 <div class="col mb-3">
-                  <input type="text" class="form-control" placeholder="Name">
+                  <input type="text" name="name" class="form-control" placeholder="Name">
                 </div>
                 <div class="col mb-3">
-                  <input type="email" class="form-control" placeholder="Email">
+                  <input type="email" name="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="col mb-3">
-                  <input type="number" class="form-control" placeholder="Contact no.">
+                  <input type="number" name="contact" class="form-control" placeholder="Contact no.">
                 </div>
               </div>
               <div class="row">
                 <div class="col mb-6">
-                  <select id="disabledSelect" class="form-select" placeholder="Select Our Services">
+                  <select id="disabledSelect" name="selectServices" class="form-select" placeholder="Select Our Services">
                     <option>Dry & cleaning</option>
                     <option>Wash</option>
 
                   </select>
                 </div>
                 <div class="col mb-6">
-                  <input type="textarea" class="form-control" placeholder="Please provide your query">
+                  <input type="textarea" name="yourQuery" class="form-control" placeholder="Please provide your query">
                 </div>
               </div>
               </p>
 
-              <a href="#" class="btn btn-primary">Submit</a>
+              <input type="submit" class="btn btn-primary">
             </form>
           </div>
         </div>
@@ -212,72 +230,73 @@
 
   <br>
   <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <img src="images/waterfresh_logo.png" alt="" height="50">
-         
-
-
-                  </div>
-        <div class="col">
-          <h5>About Us</h5>
-          <ul>
-            <li style="font-size: 14px;">Our Journey</li>
-            <li style="font-size: 14px;">Our Mission</li>
-            <li style="font-size: 14px;">Our Values</li>
-          </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li style="font-size: 14px;"><a href="about">Our Journey</a></li>
+                        <li style="font-size: 14px;"><a href="about">Our Mission</a></li>
+                        <li style="font-size: 14px;"><a href="about">Our Values</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li style="font-size: 14px;"><a href="services">Dry cleaning</a>
+                          
+                        </li>
+                        <li style="font-size: 14px;"><a href="services">Deep Cleaning</a>
+                            
+                        </li>
+                         <li style="font-size: 14px;"><a href="services">Special Events</a>
+                            
+                        </li>
+                        <li style="font-size: 14px;"><a href="services">Who Do We Cater</a></li>
+                         <ul>
+                        <li style="font-size: 12px;">Corporate</li>
+                        <li style="font-size: 12px;">Household</li>
+                        
+                           </ul>
+                        <li style="font-size: 14px;"><a href="services">Mode Of Services</a>
+                      <ul>
+                        <li style="font-size: 12px;">Pick up & drop</li>
+                        
+                        <li style="font-size: 12px;">Onsite</li>
+                        
+                          </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Partner With Us</h5>
+                    <ul>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Sponsor Collection Point</a></li>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Buy a Franchisee</a></li>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Delivery Partner</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Locate Us</h5>
+                    <ul>
+                        <li style="font-size: 14px;">Gurugram</li>
+                        <li style="font-size: 14px;">Manesar</li>
+                        <li style="font-size: 14px;">Dwarka Expressway</li>
+                        <li style="font-size: 14px;">South Delhi</li>
+                        <li style="font-size: 14px;">Faridabad</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Work With Us</h5>
+                    <button type="button" class="btn btn-outline-info"><a href="workWithUs"
+                            class="text-decoration-none" style="color:#35b5b9">Apply now</a></button>
+                </div>
+            </div>
         </div>
-        <div class="col">
-          <h5>Services</h5>
-          <ul>
-            <li style="font-size: 14px;">Special Events
-              <ul>
-                <li style="font-size: 12px;">Destination Wedding</li>
-                <li style="font-size: 12px;">Events</li>
-              </ul>
-            </li>
-            <li style="font-size: 14px;">Pick & Drop
-              <ul>
-                <li style="font-size: 12px;">Home Cleansing</li>
-                <li style="font-size: 12px;">Curtains & Furnishings</li>
-                <li style="font-size: 12px;">Rugs & Carpets</li>
-                <li style="font-size: 12px;">Bags & Shoes</li>
-                <li style="font-size: 12px;">Delicates & Formals</li>
-              </ul>
-            </li>
-            <li style="font-size: 14px;">Subscriptions Model</li>
-            <li style="font-size: 14px;">Corporate</li>
-            <li style="font-size: 14px;">Retail</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Partner With Us</h5>
-          <ul>
-            <li style="font-size: 14px;">Sponsor Collection Point</li>
-            <li style="font-size: 14px;">Buy a Franchisee</li>
-            <li style="font-size: 14px;">Delivery Partner</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Locate Us</h5>
-          <ul>
-            <li style="font-size: 14px;">Gurugram</li>
-            <li style="font-size: 14px;">Manesar</li>
-            <li style="font-size: 14px;">Dwarka Expressway</li>
-            <li style="font-size: 14px;">South Delhi</li>
-            <li style="font-size: 14px;">Faridabad</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Work With Us</h5>
-          <button type="button" class="btn btn-outline-info"><a href="workWithUs.html" class="text-decoration-none"
-              style="color:#35b5b9">Apply now</a></button>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <footer style="background-color: #7ee7de;">
+    </footer>
+   
+ <footer style="background-color: #7ee7de;">
     <br>
     <div class="container">
       <div class="row">

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home Page</title>
+  <title>Bootstrap demo</title>
   <link href="./CSS/style.css" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,41 +30,56 @@
 
   <nav class="navbar navbar-expand-lg fixed-top sticky" style="background-color: #7ee7de;">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html"><img src="images/waterfresh_logo.png" alt="" height="50"></a>
+      <a class="navbar-brand" href="index.html"><img src="images/logo_waterfresh.png" alt="" height="70"></a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navList">
+      <div class="collapse navbar-collapse navbar-center" id="navbarSupportedContent">
+        <ul class="navbar-nav" id="navbar-navList">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link" href="about.html">About us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="partnerWithUs.html">Partner With US</a>
+            <a class="nav-link" href="partnerWithUs.html">Partner with us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contactUs.html">Contact Us</a>
+            <a class="nav-link" href="contactUs.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="workWithUs.html">Work With US</a>
+            <a class="nav-link" href="workWithUs">Join us</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <a href="tel:7420140066" class="btn btn-outline-success rounded-pill text-center" type="ntn btn-primary"
-            style="background-color: rgb(20, 184, 212); color: white; height: 40px;">
-            <!-- Bootstrap phone icon -->
-            <span style="font-family: Arial, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><i
-                class="bi bi-telephone"></i>+917420140066</span>
+        
+        
+        <form class="d-flex ms-auto">
+          <div class="container">
+            <!-- Create social media icons using Font Awesome -->
+            <a href="tel: +91742881455" class="btn btn-link">
+              <i class="fa fa-phone"></i>
             </a>
+
+            
+            <a href="https://api.whatsapp.com/send/?phone=917428140066&text&type=phone_number&app_absent=0"
+              class="btn btn-link">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="mailto:waterfresh323@gmail.com"
+              class="btn btn-link">
+              <i class="fa fa-envelope"></i>
+            </a>
+
+            <!-- Add more social media icons and links as needed -->
+          </div>
         </form>
+      
       </div>
     </div>
   </nav> <!--end container-->
@@ -85,9 +100,11 @@
         <div class="card text-center" style="width: 800px; height: 200px;">
 
           <div class="card-body">
+           
             <h5 class="card-title">Schedule Home Pick Up & Drop</h5>
             <p class="card-text">
-            <form action="./JS/server.js" method="POST">
+            <form action="user-details-save" method="POST">
+                
               <div class="row">
                 <div class="col mb-3">
                   <input type="text" name="name" class="form-control" placeholder="Name">
@@ -108,99 +125,486 @@
       </div>
   </section>
   <!--END-->
-
   <!--Our Services-->
-  <section class="container-fluid ourServices">
+  <section class="ourServices">
     <div class="img-fluid bg-img-none" style="background-image: url('images/ourServicesWallpaper.png'); ">
       <br>
       <br>
-
+      <br>
       <div class="text-center">
 
         <h3 class="fw-bold" style="color:rgb(31, 120, 143);">Our Services</h3>
-        <p class="p-4">WaterFresh is an Eco-Friendly Organic Dry Cleaning Company that stands out in the industry for
-          several compelling reasons that set us apart from traditional dry cleaning businesses and even other
-          eco-friendly alternatives.</p>
+        <br>
+                <ul class="nav nav-pills gap-2 justify-content-center">
+  <li class="active"><a class="btn btn-primary btn-lg" data-toggle="pill" href="#dryCleaning" role="button">Dry Cleaning </a></li>
+  <li><a class="btn btn-primary btn-lg" data-toggle="pill" href="#deepCleaning" role="button"> Deep Cleaning</a></li>
+  <li><a class="btn btn-primary btn-lg" data-toggle="pill" href="#specialEvents" role="button">Special Events</a></li>
+</ul>
+<br>
+<br>
+<div class="tab-content">
+  <div id="dryCleaning" class="active tab-pane fade in active">
+   
+    <section class="text-center" style="background-color: black;">
+    <br>
+    <h3 style="color:white;">Dry Cleaning</h3>
+    <p style="color:white;">At WaterFresh, we use specialized solvents to gently lift away dirt and stains. This method, devoid of water, is perfect for delicate fabrics that may not withstand conventional washing. Experience the magic of new age of dry cleaning with our eco-friendly methods. 
+</p>
+
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="container mt-5">
+            <div class="image-container">
+              <img src="images/1.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">Rugs/Carpets</h2>
+                 
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Rugs/Carpets:</b> 
+                <br>Revive the beauty of your rugs and carpets, effectively removing dirt and stains while preserving their vibrant colors and patterns. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container mt-5">
+            <div class="image-container">
+              <img src="images/2.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                Shoes & Bags
+                </h2>
+
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Shoes & Bags:</b> 
+                <br>Give your shoes and bags a new lease on life with our careful dry cleaning process, maintaining their quality and appearance </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container mt-5">
+            <div class="image-container">
+              <img src="images/3.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                Delicates
+                </h2>
+                 
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Delicates:</b> 
+                <br>Our gentle dry cleaning process ensures your delicates are cleaned thoroughly without compromising their integrity </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="row justify-content-center" style="margin-top: 0;">
-        <div class="col-sm-4 card custom-card" style="width: 250px; height: 19rem; margin: 25px;">
-          <img src="images/Pick.png" class="card-img-top img-fluid" alt="Pick&Drop">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
 
-          <p class="card-img-overlay text-center fw-bold"
-            style="margin-top: 50%; color: rgb(31, 120, 143); font-size: 20px;">
-            Pick & Drop
-          </p>
-          <p class="card-text" style="font-size: 9px; margin-top: 25px;">We provide pickup and delivery services. It
-            ensures that all
-            garments are collected, cleaned, and returned in a timely manner.
-          </p>
-          <div class="text-center">
-            <a href="services.html" class="btn btn-primary stretched-link">Read More</a>
+          <div class="container mt-4">
+            <div class="image-container">
+              <img src="images/4.png" alt="Image" class="img-fluid">
+              <div class="image-overlay ">
+                <h2 class="fw-bold img_hide">
+                Cushion & Couches
+                </h2>
+
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Cushion & Couches:</b> 
+                <br>Revitalize your cushions and couches, lifting away dirt and refreshing the fabric.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-sm-4 card custom-card" style="width: 250px; height: 19rem; margin: 25px;">
-          <img src="images/Special_event.png" class="card-img-top img-fluid" alt="specialEvents">
+        <div class="col-md-4">
+          <div class="container mt-4">
+            <div class="image-container">
+              <img src="images/5.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                Nano Coating
+                </h2>
 
-          <p class="card-img-overlay text-center fw-bold"
-            style="margin-top: 50%; color: rgb(31, 120, 143); font-size: 20px;">
-            Special Events
-          </p>
-          <p class="card-text" style="font-size: 9px; margin-top: 25px;">We specialise in providing dry cleaning
-            services for large
-            events, such as weddings, conferences, and other gatherings.
-          </p>
-          <div class="text-center">
-            <a href="services.html" class="btn btn-primary stretched-link">Read More</a>
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Nano Coating:</b> 
+                <br>Discover the power of nano coating in our dry cleaning process, offering superior protection and longevity. </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-sm-4 card custom-card" style="width: 250px; height: 19rem; margin: 25px;">
-          <img src="images/Subscription.png" class="card-img-top img-fluid" alt="Subscription_Model">
+        <div class="col-md-4">
 
-          <p class="card-img-overlay text-center fw-bold"
-            style="margin-top: 50%; color: rgb(31, 120, 143); font-size: 20px;">
-            Subscription Model</p>
-          <p class="card-text" style="font-size: 9px; margin-top: 25px;">Customers can directly choose the frequency of
-            service, such
-            as weekly, bi-weekly, monthly, quarterly, or yearly.
-          </p>
-          <div class="text-center">
-            <a href="services.html" class="btn btn-primary stretched-link">Read More</a>
+          <div class="container mt-4">
+            <div class="image-container">
+              <img src="images/6.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                Formals
+                </h2>
+
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Formals:</b> 
+                <br>Keep your formal wear looking sharp and fresh, preserving their elegance and style.
+ </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-sm-4 card custom-card" style="width: 250px; height: 19rem; margin: 25px;">
-          <img src="images/corporate.png" class="card-img-top img-fluid" alt="corporate">
+    </div>
+    <div class="text-center">
+        <a href="services" class="btn btn-primary">Read More</a>
+      </div>
+    <br>
+    <br>
+  </section>
 
-          <p class="card-img-overlay text-center fw-bold"
-            style="margin-top: 50%; color: rgb(31, 120, 143); font-size: 20px;">
-            Corporate</p>
-          <p class="card-text" style="font-size: 9px; margin-top: 25px;">
-            WaterFresh laundry services for corporate clients offer a convenient and time-saving solution to one of the
-            daily challenges many businesses face.
+  </div>
+  <div id="deepCleaning" class="tab-pane fade">
+    
+    <section class="text-center" style="background-color: black;">
+    <br>
+    <h3 style="color:white;">Deep Cleaning</h3>
+     <p style="color:white;">Dive into the world of deep cleaning with WaterFresh, where we go beyond the surface to rejuvenate your space. Our meticulous process targets everything from carpets and upholstery to hard-to-reach spaces and kitchen appliances. We ensure every corner of your home or office is revitalized, leaving you with a cleaner, healthier space.</p>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="container mt-5">
+            <div class="image-container">
+              <img src="images/Upholstery Renewal.png" alt="Image" class="img-fluid">
+              <div class="image-overlay ">
+                <h2 class="fw-bold img_hide">Upholstery Renewal</h2>
 
-          </p>
-          <div class="text-center">
-            <a href="services.html" class="btn btn-primary stretched-link">Read More</a>
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Upholstery Renewal:</b> 
+                <br>Preserve your furniture’s quality, removing embedded dirt and allergens from your upholstery.
+
+                  </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-sm-4 card custom-card" style="width: 250px; height: 19rem; margin: 25px;">
-          <img src="images/retail.png" class="card-img-top img-fluid" alt="Retail">
+        <div class="col-md-4">
+          <div class="container mt-5">
+            <div class="image-container">
+              <img src="images/Kitchen Appliances.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                Kitchen Appliances
+                </h2>
 
-          <p class="card-img-overlay text-center fw-bold"
-            style="margin-top: 50%; color: rgb(31, 120, 143); font-size: 20px;">
-            Retail</p>
-          <p class="card-text" style="font-size: 9px; margin-top: 25px;">WaterFresh laundry services for households have
-            gained immense popularity in recent years, offering a convenient and time-saving solution for busy
-            individuals and families.
-          </p>
-          <div class="text-center">
-            <a href="services.html" class="btn btn-primary stretched-link">Read More</a>
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Kitchen Appliances:</b> 
+                <br>Restore the sparkle in your kitchen with our meticulous deep cleaning of appliances, banishing grease, grime, and odors.
+
+                  </p>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="col-md-4">
+          <div class="container mt-5">
+            <div class="image-container">
+              <img src="images/Bathroom Sanitization.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                Bathroom Sanitization
+                </h2>
+
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Bathroom Sanitization:</b> 
+                <br>Get a germ-free space with our deep cleaning services that target mold, mildew, and grime in your bathroom.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+
+          <div class="container mt-4">
+            <div class="image-container">
+              <img src="images/Window and Glass Cleaning.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                Window and Glass Cleaning
+                </h2>
+
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Window and Glass Cleaning:</b> 
+                <br>Enhance your view with our window and glass cleaning services, removing smudges and streaks for a brighter outlook.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container mt-4">
+            <div class="image-container">
+              <img src="images/Air Duct Cleaning.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                  
+                   Air Duct Cleaning
+
+                </h2>
+
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b> Air Duct Cleaning:</b> 
+                <br>Breathe cleaner, fresher air. Our deep cleaning services include air duct cleaning, reducing allergens and improving HVAC efficiency.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+
+          <div class="container mt-4">
+            <div class="image-container">
+              <img src="images/Floor Care.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                Floor Care
+                </h2>
+
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>  Floor Care:</b> 
+                <br>Step onto gleaming floors with our specialized floor care services, addressing stains, scuffs, and grime on various flooring types.
+
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+        <a href="services" class="btn btn-primary">Read More</a>
+      </div>
+    <br>
+    <br>
+  </section>
+
+  </div>
+  <div id="specialEvents" class="tab-pane fade">
+   
+    <section class="text-center" style="background-color: black;">
+    <br>
+    <h3 style="color:white;">Special Events</h3>
+     <p style="color:white;">Sparkle for Every Occasion. Make your special events even more memorable with our dedicated cleaning services. From corporate parties and get-togethers to weddings, we ensure you and your venue shines as brightly as the occasion. Trust WaterFresh to handle the cleanliness, so you can focus on making beautiful memories.</p>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="container mt-5">
+            <div class="image-container">
+              <img src="images/Destination Weddings.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">Destination Weddings</h2>
+
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Destination Weddings:</b> 
+                <br>WaterFresh Events Services ensures bridal gowns, groomsmen suits, and all attire are perfectly pressed and ready for the grand celebration.
+
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container mt-5">
+            <div class="image-container">
+              <img src="images/Fashion Shows.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                Fashion Shows
+                </h2>
+
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Fashion Shows:</b> 
+                <br>In the world of glamour and style, presentation is everything. We partner with organizers to deliver onsite steampressing stations that guarantee runway-ready outfits.
+
+
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="container mt-5">
+            <div class="image-container">
+              <img src="images/Film Shooting Events.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                Film Shooting Events
+                </h2>
+
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Film Shooting Events
+                :</b> 
+                <br>We cater to film shooting events by providing onsite steampressing stations.
+
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="container mt-4">
+            <div class="image-container">
+              <img src="images/Corporate Events.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                Corporate Events
+                </h2>
+
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>  Corporate Events:</b> 
+                <br>Business gatherings demand a polished look. We offer onsite steampressing stations for executives and attendees. 
+
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="container mt-4">
+            <div class="image-container">
+              <img src="images/Special Occasions.png" alt="Image" class="img-fluid">
+              <div class="image-overlay">
+                <h2 class="fw-bold img_hide">
+                Special Occasions
+                </h2>
+
+              </div>
+              <div class="image-overlay">
+                  <p class="img_des"><b>Special Occasions:</b> 
+                <br>From milestone birthdays to anniversary celebrations, our onsite steampressing stations add a touch of sophistication to your events.
+
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="text-center">
+        <a href="services" class="btn btn-primary">Read More</a>
+      </div>
+    <br>
+    <br>
+  </section>
+
+  </div>
+</div>
+       </div>
       </div>
   </section>
   <!--End Our Services-->
+
+<!--End Our Services-->
+<section>
+
+    <br>
+    <br>
+  <div class="text-center">
+     <h3 class="fw-bold" style="color:rgb(31, 120, 143);">Who Do We Cater</h3>
+</div>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-6 col-12 text-center">
+    <img src="images/8.png" class="img-fluid" alt="" style="height: 60%;"/>
+    <div class="text-center">
+    <h4>Corporate</h4>
+</div>
+    <p class="corporate_below">At WaterFresh, we understand the importance of a clean and inviting workspace. We offer specialized cleaning services for our corporate clients, ensuring their offices are immaculate and conducive for productivity. From regular maintenance to post-event cleanups, we cater to all your corporate cleaning needs. </p>
+   </div>
+   <div class="col-6 col-12 text-center">
+   <img src="images/7.png" class="img-fluid" alt="" style="height: 60%"/>
+  
+   <h4>Household</h4>
+   <p>WaterFresh brings environmental safety and effective cleaning to your doorstep, ensuring your living spaces are as clean and fresh as your laundry. With WaterFresh, experience a home that’s not just clean, but truly cared for.
+</p>
+   </div>
+</div>
+</div>
+
+</section>
+
+<br>
+<br>
+
+<section>
+<div class="img-fluid" style="background-image: url('images/processWeFollowbackground.jpg');">
+<div class="text-center">
+    <h3 style="color:rgb(31, 120, 143);"><b>Mode Of Services</b></h3>
+</div>
+    <br>
+    <br>
+<div class="how-section1">
+        <div class="row">
+          <div class="col-sm-6 col-12 order-last order-sm-0 text-center">
+            <h5>Pick up and drop</h5>
+            <p class="text-muted">We understand your busy schedule. That’s why we offer convenient pick-up and drop-off services for all your cleaning needs. Whether it’s your clothes or home cleaning, we ensure our services reach your doorstep. With WaterFresh, experience hassle-free cleaning that comes to you.
+            </p>
+          </div>
+          <div class="col-sm-6 col-12 how-img">
+            <img src="images/Pick and drop.png" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <br>
+        <div class="row my-3">
+          <div class="col-sm-6 col-12 how-img">
+            <div class="text-center">
+            <img src="images/Subcription Mode.png" class="img-fluid" alt=""  />
+</div>
+          </div>
+          <div class="col-sm-6 col-12 text-center">
+            <h5>Onsite Projects
+</h5>
+            <p class="text-muted">
+            WaterFresh specializes in cleaning up after construction or renovation projects, leaving your space pristine and ready for occupancy. We also  prepare your space for any special event, ensuring it leaves a lasting impression on your guests. We ensure a hygienic and comfortable working atmosphere, contributing to productivity and employee well-being.
+
+            </p>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="text-center">
+      <h3 style="font-size: 20px;"><b>Note :- Attractive discounts available on a weekly/monthly subscription</b></h3>
+</div>
+    </div> 
+</div> 
+</section>
 
   <!--The process we follow-->
   <br>
@@ -210,8 +614,7 @@
 
       <div class="text-center">
         <h3 class="fw-bold" style="color:#35b5b9;">The Process We Follow</h3>
-        <p>WaterFresh offers an online efficient process that serves the convenience of customers. Here's an elaborate
-          explanation of the steps involved in this process
+        <p>WaterFresh offers an transparent online process to ensure your convenience.
         </p>
       </div>
          <br>
@@ -222,15 +625,13 @@
               <h4 style="color:#098596;">Scheduling</h4>
               <img src="images/icon 1.png" class="img-fluid" alt="" style="height:40%"/>
 
-              <p class="text-muted">Customers will start by booking an appointment for the services through the
-                WaterFresh website or mobile application.</p>
+              <p class="text-muted">You will start by booking an appointment for the required services through our official website/mobile application.</p>
             </div>
             <div class="col-md-4">
               <h4 style="color:#098596;">Pick Up</h4>
               <img src="images/icon 2.png" class="img-fluid" alt="" style="height:40%" />
 
-              <p class="text-muted">On the scheduled date and time, a representative arrives at the customer's
-                specified location (home or office) to pick up the items</p>
+              <p class="text-muted">On the scheduled date and time, a representative arrives at your specified location to pick up the items.</p>
             </div>
             <div class="col-md-4">
               <h4 style="color:#098596;">Receiving
@@ -246,15 +647,13 @@
                 <h4 style="color:#098596;">Inspection</h4>
                 <img src="images/icon 4.png" class="img-fluid" alt="" style="height:40%"/>
 
-                <p class="text-muted">In this process the collected items are inspected for stains, and any specific
-                  care instructions provided by the customer.</p>
+                <p class="text-muted">Then the collected items are inspected for stains, and any specific care instructions provided by you are noted down.</p>
               </div>
               <div class="col-md-4">
                 <h4 style="color:#098596;">Pre Spotting</h4>
                 <img src="images/icon 5.png" class="img-fluid" alt="" style="height:40%"/>
 
-                <p class="text-muted">Pre-spotting is selectively treating certain stains and garments before they
-                  undergo the cleaning process.</p>
+                <p class="text-muted">In this step we selectively treat certain stains and garments before they undergo the cleaning process.</p>
               </div>
               <div class="col-md-4">
                 <h4 style="color:#098596">Cleaning
@@ -276,16 +675,14 @@
                   <h4 style="color:#098596;">Finishing</h4>
                   <img src="images/icon 8.png" class="img-fluid" alt="" style="height:40%"/>
 
-                  <p class="text-muted">On the scheduled date and time, a time representative arrives at the customer's
-                    specified location (home or office) to pick up the items</p>
+                  <p class="text-muted">We use steam irons and ironing boards to achieve creaseless pressed garments.</p>
                 </div>
                 <div class="col-sm-4">
                   <h4 style="color:#098596;">Delivery
                   </h4>
                   <img src="images/icon 9.png" class="img-fluid" alt="" style="height:40%"/>
 
-                  <p class="text-muted">In WaterFresh professionals use steam irons and ironing boards to achieve
-                    creaseless pressed garments.
+                  <p class="text-muted">On the scheduled date and time, a representative drops the items at your specified location.
                   </p>
                 </div>
 
@@ -299,13 +696,16 @@
   <br>
   <br>
   <!--Mission and vision-->
+  
   <section class="mission">
+    
     <div class="img-fluid" style="background-image: url('images/mission_background.png');">
       <br>
       <br>
+      <div class="container">
       <div class="text-center" style="color: rgb(255, 255, 255);">
-        <h4 class="fw-bold">Mission & Vision Of Waterfresh</h4>
-        <p>To provide a safe and eco-friendly organic dry-cleaning solution that puts the health and well-being of our
+        <h4 class="fw-bold">Vision Of Waterfresh</h4>
+        <p>To provide an organic dry-cleaning solution that puts the health and well-being of our
           customers first. We use biodegradable, non-toxic, and natural cleaning solutions to bring out the best in our
           customers’ clothes while also protecting the environment.
           To be recognised as an international brand that is widely appreciated for its commitment to sustainability and
@@ -333,7 +733,7 @@
           </div>
           <div class="col">
             <h4>Reliable</h4>
-            <p>SOP Driven srvices with 100% accuracy.</p>
+            <p>SOP Driven services with 100% accuracy.</p>
 
           </div>
           <div class="col">
@@ -349,7 +749,9 @@
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
           style="margin-bottom:10px;">
           Book Now
+          
         </button>
+      
       </div>
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -365,22 +767,24 @@
 
                     <div class="card-body">
                       <p class="card-text">
-                      <form>
-                        <div class="row">
-                          <div class="col mb-3">
-                            <input type="text" class="form-control" placeholder="Name">
-                          </div>
-                          <div class="col mb-3">
-                            <input type="email" class="form-control" placeholder="Email">
-                          </div>
-                          <div class="col mb-3">
-                            <input type="number" class="form-control" placeholder="Contact no.">
-                          </div>
-                        </div>
-                        </p>
+                      <form action="user-details-save" method="POST">
+                
+              <div class="row">
+                <div class="col mb-3">
+                  <input type="text" name="name" class="form-control" placeholder="Name">
+                </div>
+                <div class="col mb-3">
+                  <input type="email" name="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="col mb-3">
+                  <input type="number" name="contact" class="form-control" placeholder="Contact no.">
+                </div>
+              </div>
+              </p>
 
-                        <a href="#" class="btn btn-primary">Submit</a>
-                      </form>
+              <input type="submit" class="btn btn-primary">
+            </form>
+
                     </div>
                   </div>
                 </div>
@@ -389,107 +793,13 @@
             </div>
           </div>
         </div>
+</div>
       </div>
   </section>
   <!--End mission and vision-->
 
 
-  <!--Our Expertise-->
-  <section class="text-center" style="background-color: black;">
-    <br>
-    <h3 style="color:white;">Our Expertise</h3>
-
-    <div class="container ">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="container mt-5">
-            <div class="image-container">
-              <img src="images/Delicates.png" alt="Image" class="img-fluid">
-              <div class="image-overlay">
-                <h2 class="fw-bold">Delicates & Formals</h2>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="container mt-5">
-            <div class="image-container">
-              <img src="images/cushions.png" alt="Image" class="img-fluid">
-              <div class="image-overlay">
-                <h2 class="fw-bold">
-                  Cushions & Couches
-                </h2>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="container mt-5">
-            <div class="image-container">
-              <img src="images/rugs.png" alt="Image" class="img-fluid">
-              <div class="image-overlay">
-                <h2 class="fw-bold">
-                  Rugs & Carpet
-                </h2>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-
-          <div class="container mt-4">
-            <div class="image-container">
-              <img src="images/shoes.png" alt="Image" class="img-fluid">
-              <div class="image-overlay">
-                <h2 class="fw-bold">
-                  Shoes
-                </h2>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="container mt-4">
-            <div class="image-container">
-              <img src="images/bags.png" alt="Image" class="img-fluid">
-              <div class="image-overlay">
-                <h2 class="fw-bold">
-                  Bags
-                </h2>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-
-          <div class="container mt-4">
-            <div class="image-container">
-              <img src="images/nano_coating.png" alt="Image" class="img-fluid">
-              <div class="image-overlay">
-                <h2 class="fw-bold">
-                  Nano Coating
-                </h2>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-  </section>
-  <!--End Our Experties-->
-
+  
 
   <!--Partner With Us-->
   <section class="partnerWithUs">
@@ -499,8 +809,7 @@
         <br>
         <br>
         <h3 class="fw-bold" style="color:rgb(31, 120, 143);">Partner With Us</h3>
-        <p class="p-4">Some general reasons why you might consider partnering with a laundry service like WaterFresh:
-          Time-saving, Efficient, Convenient, Consistent, Reliable and Eco-Friendly Practices.
+        <p class="p-4">Reasons why you should partner with WaterFresh: We are energy efficient, consistent, reliable and eco friendly.
         </p>
       </div>
       <div class="row justify-content-center" style="margin-top: 0;">
@@ -509,7 +818,7 @@
 
           <p class="card-img-overlay text-center fw-bold"
             style="margin-top: 70%; color: rgb(31, 120, 143); font-size: 20px;">
-            Sponsor a Collection Point>
+            Sponsor a Collection Point
           </p>
 
         </div>
@@ -518,7 +827,7 @@
 
           <p class="card-img-overlay text-center fw-bold"
             style="margin-top: 70%; color: rgb(31, 120, 143); font-size: 20px;">
-            Buy a Franchisee>
+            Buy a Franchisee
           </p>
 
         </div>
@@ -527,13 +836,12 @@
 
           <p class="card-img-overlay text-center fw-bold"
             style="margin-top: 70%; color: rgb(31, 120, 143); font-size: 20px;">
-            Delivery Partner></p>
+            Delivery Partner</p>
 
         </div>
       </div>
       <div class="text-center">
-        <a href="partnerWithUs.html" class="btn btn-primary">Partner With Us</a>
-
+        <a href="partnerWithUs" class="btn btn-primary">Partner With Us</a>
       </div>
       <br>
       <br>
@@ -561,7 +869,7 @@
           <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
             <div class="panel-body px-3 mb-4">
               <p>A liquid solvent is used to clean your clothes instead of water and detergent. The solvent contains
-                little or no water, hence the term "dry cleaning". Drycleaners use very large and technically advanced
+                little or no water, hence the term "dry cleaning". Dry cleaners use very large and technically advanced
                 computer-controlled dry cleaning machines.
               </p>
 
@@ -749,69 +1057,72 @@
 
   <br>
   <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <img src="images/waterfresh_logo.png" alt="" height="50">
-          
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li style="font-size: 14px;"><a href="about">Our Journey</a></li>
+                        <li style="font-size: 14px;"><a href="about">Our Mission</a></li>
+                        <li style="font-size: 14px;"><a href="about">Our Values</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Services</h5>
+                    <ul>
+                        <li style="font-size: 14px;"><a href="services">Dry cleaning</a>
+                          
+                        </li>
+                        <li style="font-size: 14px;"><a href="services">Deep Cleaning</a>
+                            
+                        </li>
+                         <li style="font-size: 14px;"><a href="services">Special Events</a>
+                            
+                        </li>
+                        <li style="font-size: 14px;"><a href="services">Who Do We Cater</a></li>
+                         <ul>
+                        <li style="font-size: 12px;">Corporate</li>
+                        <li style="font-size: 12px;">Household</li>
+                        
+                           </ul>
+                        <li style="font-size: 14px;"><a href="services">Mode Of Services</a>
+                      <ul>
+                        <li style="font-size: 12px;">Pick up & drop</li>
+                        
+                        <li style="font-size: 12px;">Onsite</li>
+                        
+                          </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Partner With Us</h5>
+                    <ul>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Sponsor Collection Point</a></li>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Buy a Franchisee</a></li>
+                        <li style="font-size: 14px;"><a href="partnerWithUs">Delivery Partner</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Locate Us</h5>
+                    <ul>
+                        <li style="font-size: 14px;">Gurugram</li>
+                        <li style="font-size: 14px;">Manesar</li>
+                        <li style="font-size: 14px;">Dwarka Expressway</li>
+                        <li style="font-size: 14px;">South Delhi</li>
+                        <li style="font-size: 14px;">Faridabad</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5>Work With Us</h5>
+                    <button type="button" class="btn btn-outline-info"><a href="workWithUs"
+                            class="text-decoration-none" style="color:#35b5b9">Apply now</a></button>
+                </div>
+            </div>
         </div>
-        <div class="col">
-          <h5>About Us</h5>
-          <ul>
-            <li style="font-size: 14px;">Our Journey</li>
-            <li style="font-size: 14px;">Our Mission</li>
-            <li style="font-size: 14px;">Our Values</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Services</h5>
-          <ul>
-            <li style="font-size: 14px;">Special Events
-              <ul>
-                <li style="font-size: 12px;">Destination Wedding</li>
-                <li style="font-size: 12px;">Events</li>
-              </ul>
-            </li>
-            <li style="font-size: 14px;">Pick & Drop
-              <ul>
-                <li style="font-size: 12px;">Home Cleansing</li>
-                <li style="font-size: 12px;">Curtains & Furnishings</li>
-                <li style="font-size: 12px;">Rugs & Carpets</li>
-                <li style="font-size: 12px;">Bags & Shoes</li>
-                <li style="font-size: 12px;">Delicates & Formals</li>
-              </ul>
-            </li>
-            <li style="font-size: 14px;">Subscriptions Model</li>
-            <li style="font-size: 14px;">Corporate</li>
-            <li style="font-size: 14px;">Retail</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Partner With Us</h5>
-          <ul>
-            <li style="font-size: 14px;">Sponsor Collection Point</li>
-            <li style="font-size: 14px;">Buy a Franchisee</li>
-            <li style="font-size: 14px;">Delivery Partner</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Locate Us</h5>
-          <ul>
-            <li style="font-size: 14px;">Gurugram</li>
-            <li style="font-size: 14px;">Manesar</li>
-            <li style="font-size: 14px;">Dwarka Expressway</li>
-            <li style="font-size: 14px;">South Delhi</li>
-            <li style="font-size: 14px;">Faridabad</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h5>Work With Us</h5>
-          <button type="button" class="btn btn-outline-info"><a href="workWithUs.html" class="text-decoration-none"
-              style="color:#35b5b9">Apply now</a></button>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
+   
   <footer style="background-color: #7ee7de;">
     <br>
     <div class="container">
